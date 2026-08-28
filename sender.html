@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sender</title></head>
+<body>
+    <h2>Optical Sender</h2>
+
+    <label>Orig Data:</label>
+    <input type="text" id="orig_val" value="1011"><br><br>
+    <label>Corr Data (1 bit err max):</label>
+    <input type="text" id="corr_val" value="1001"><br><br>
+    <label>Speed (ms):</label>
+    <input type="number" id="spd" value="300"><br><br>
+    <button id="snd_btn">Send</button>
+    
+    <p id="stat"></p>
+    <div id="box" style="width: 300px; height: 300px; border: 2px solid black;"></div>
+
+    <script src="sender.js"></script>
+</body>
+</html>
