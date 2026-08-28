@@ -43,7 +43,7 @@ let sync = false;let buffer = [];
 let remaining = 0; let last_det = 'SEP';
 
 function decodeHamming(bits) {
-    let bits = [0].concat(bits.split('').map(Number));
+    bits = [0].concat(bits.split('').map(Number));
     let errorIdx = 0;
 
     for (let i = 1; i <= 30; i++) { if (bits[i] == 1) errorIdx ^= i;}
